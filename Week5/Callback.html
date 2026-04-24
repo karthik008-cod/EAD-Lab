@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Callback Example</title>
+</head>
+<body>
+<div style="position:absolute;top:10px;right:20px;text-align:right;">
+    <h4>Name: Damodara Lakshmi Madhulika</h4>
+    <h4>Roll No: 160124737144</h4>
+    <p><b>Open Console</b></p>
+</div>
+<script>
+    function greet(name,callback){
+        console.log("Hi "+name);
+        callback();
+    }
+    function sayBye(){
+        console.log("Bye");
+    }
+    greet("Madhu",sayBye);
+</script>
+</body>
+</html>
