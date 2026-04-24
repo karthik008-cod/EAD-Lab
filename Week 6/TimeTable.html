@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Timetable</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body { background-color: #f8f9fa; }
+    table { border-collapse: collapse; text-align: center; }
+    th, td { border: 1px solid black; vertical-align: middle; height: 60px; }
+
+    #lunch { background: #FFDBFD !important; }
+    .lab { background: lightgreen !important; }
+    .break { background: #FFF57E !important; }
+    .foc { background: #FFB2B2 !important; }
+    .pqt { background: #8494FF !important; color: white; }
+    .dbms { background: #AACDDC !important; }
+    .eea { background: #D2C4B4 !important; }
+    .ead { background: #8AA624 !important; color: white; }
+    .es { background: #FF6363 !important; color: white; }
+
+    .header-box { text-align: center; margin-bottom: 20px; }
+  </style>
+</head>
+
+<body>
+
+  <div class="container mt-4">
+    <div class="header-box">
+      <h3>CBIT</h3>
+      <h5>IT-3 sem4</h5>
+    </div>
+
+    <div class="table-responsive">
+      <table class="table table-bordered text-center">
+        <thead class="table-light">
+          <tr>
+            <th>Day</th>
+            <th>9:10 - 10:10</th>
+            <th>10:10 - 11:10</th>
+            <th>11:15 - 12:15</th>
+            <th>12:15 - 1:00</th>
+            <th>1:00 - 2:00</th>
+            <th>2:00 - 3:00</th>
+            <th>3:05 - 4:05</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Monday</th>
+            <td class="foc">FOC</td>
+            <td class="pqt">PQT</td>
+            <td class="ead">EAD</td>
+            <td id="lunch" rowspan="5">Lunch Break</td>
+            <td class="dbms">DBMS</td>
+            <td class="eea">EEA</td>
+            <td class="break">Break</td>
+          </tr>
+          <tr>
+            <th>Tuesday</th>
+            <td class="dbms">DBMS</td>
+            <td class="eea">EEA</td>
+            <td class="pqt">PQT</td>
+            <td colspan="3" class="lab">DBMS Lab</td>
+          </tr>
+          <tr>
+            <th>Wednesday</th>
+            <td class="ead">EAD</td>
+            <td class="foc">FOC</td>
+            <td class="break">Break</td>
+            <td class="eea">EEA</td>
+            <td class="dbms">DBMS</td>
+            <td class="pqt">PQT-T</td>
+          </tr>
+          <tr>
+            <th>Thursday</th>
+            <td colspan="2" class="lab">Mini Project</td>
+            <td class="break">Break</td>
+            <td class="foc">FOC</td>
+            <td class="pqt">PQT</td>
+            <td class="break">ES</td>
+          </tr>
+          <tr>
+            <th>Friday</th>
+            <td class="break">ES</td>
+            <td class="ead">EAD</td>
+            <td CLASS="break">Mentoring</td>
+            <td colspan="3" class="lab">EAD Lab</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
