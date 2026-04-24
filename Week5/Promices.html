@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Promise Example</title>
+</head>
+<body>
+<div style="position:absolute;top:10px;right:20px;text-align:right;">
+    <h4>Name:Yuvaan Kaarthikeyaa</h4>
+    <h4>Roll No:160124737164</h4>
+    <p><b>Open Console</b></p>
+</div>
+<script>
+    let myPromise=new Promise(function(resolve,reject) {
+        let success=true;
+        if (success){
+            resolve("Task completed!");
+        }else{
+            reject("Task failed!");
+        }
+    });
+    myPromise
+        .then(function(result){
+            console.log(result);
+        })
+        .catch(function(error){
+            console.log(error);
+        });
+</script>
+</body>
+</html>
